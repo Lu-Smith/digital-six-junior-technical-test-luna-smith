@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import commerce from "./lib/commerce";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import About from "./About";
+import ProductPage from "./ProductPage";
 
-function App() {
+const App = () => {
+  //Here is the product list data :)
+  const [products, setProducts] = useState([]);
+
+  const fetchProducts = () => {
+    commerce.products
+      .list()
+      .then((products) => {
+        setProducts(products.data);
+      })
+      .catch((error) => {
+        console.log("There was an error fetching the products", error);
+      });
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  const navItems = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <NavBar navItems={navItems} />
+        <Switch>
+          <Route exact path="/">
+            <Home productData={products} />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/product/:id">
+            <ProductPage />
+          </Route>
+        </Switch>
+        <Footer navItems={navItems} />
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
