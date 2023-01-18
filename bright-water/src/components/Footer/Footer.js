@@ -4,7 +4,7 @@ import classes from "./footer.sass";
 export default function Footer({ navItems }) {
   return (
     <div className="Footer">
-      <h2>Footer Component</h2>
+      <h2>Bright Water</h2>
       <ul>
         {navItems.map((item, index) => (
           <li key={index}>
