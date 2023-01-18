@@ -7,7 +7,7 @@ export default function Home({ productData }) {
   return (
     <>
       <TopBannerSection />
-      <ProductsList />
+      <ProductsList products={productData}/>
     </>
   );
 }

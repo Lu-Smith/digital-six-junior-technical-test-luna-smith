@@ -6,7 +6,10 @@ export default function ProductList({ products }) {
   return (
     <>
       <h2>Product List Component</h2>
-      <ProductCard />
+      {products.map((product, index) => {
+        return <ProductCard key={index} product={product}/>
+      })}
+      
     </>
   );
 }
