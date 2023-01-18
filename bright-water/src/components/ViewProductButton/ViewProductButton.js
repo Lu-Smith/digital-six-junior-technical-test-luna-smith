@@ -5,7 +5,7 @@ export default function ViewProductButton({ productPermaLink }) {
   const permaLink = productPermaLink;
 
   return (
-    <div>
+    <div className="ViewProductButton">
       <Link to={`/product/${permaLink}`}>View Product</Link>
     </div>
   );
