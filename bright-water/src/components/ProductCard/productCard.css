@@ -1,1 +1,20 @@
-/*# sourceMappingURL=productCard.css.map */
+.ProductCard {
+  margin-top: 40px;
+  background-color: #d4d7db;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ProductCard div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.ProductCard div h4 {
+  font-size: 25px;
+}/*# sourceMappingURL=productCard.css.map */
