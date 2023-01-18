@@ -1,15 +1,11 @@
 @use "../../base"
+@use "../../mixins"
   
-@mixin display
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: center
     
 .SupportBannerSection
     width: 100vw
     height: 150px
-    @include display
+    @include mixins.displayCenter
     background-color: base.$primary-color
     
     h2

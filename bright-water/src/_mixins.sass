@@ -1,6 +1,18 @@
-@mixin display()
+@mixin displayCenter
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+@mixin displayBetween
   display: flex
   flex-direction: row
   align-items: center
   justify-content: space-between
+
+@mixin displayAround
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-around
 
