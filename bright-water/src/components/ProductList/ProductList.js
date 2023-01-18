@@ -5,7 +5,7 @@ import classes from "./productList.sass";
 export default function ProductList({ products }) {
   return (
     <>
-      <h2>Product List Component</h2>
+      <h2>Trending now</h2>
       {products.map((product, index) => {
         return <ProductCard key={index} product={product}/>
       })}
