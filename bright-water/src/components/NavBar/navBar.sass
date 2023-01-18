@@ -1,8 +1,4 @@
-$font-stack: Helvetica, sans-serif
-$primary-color: #fff
-$primary-background: #153A5B
-$primary-line-height: 23px
-$primary-font-size: 15px
+@use "../../base"
     
 .NavBar
     display: flex
@@ -10,10 +6,10 @@ $primary-font-size: 15px
     align-items: center
     justify-content: space-between
     height: 50px
-    color: $primary-background
-    background-color: $primary-color
-    line-height: $primary-line-height
-    font-size: $primary-font-size
+    color: base.$primary-background
+    background-color: base.$primary-color
+    line-height: base.$primary-line-height
+    font-size: base.$primary-font-size
 
     h2 
         padding: 5px 10px
@@ -31,7 +27,7 @@ $primary-font-size: 15px
 
             a
                 text-decoration: none
-                color: $primary-background
+                color: base.$primary-background
                 font-weight: 700
 
     
