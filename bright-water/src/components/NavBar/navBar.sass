@@ -1,10 +1,8 @@
 @use "../../base"
+@use "../../mixins"
     
 .NavBar
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: space-between
+    @include mixins.displayBetween
     height: 50px
     color: base.$primary-background
     background-color: base.$primary-color
@@ -16,10 +14,7 @@
     
     ul
         padding: 5px 10px
-        display: flex
-        flex-direction: row
-        align-items: center
-        justify-content: space-around
+        @include mixins.displayAround
         width: 200px
     
         li
