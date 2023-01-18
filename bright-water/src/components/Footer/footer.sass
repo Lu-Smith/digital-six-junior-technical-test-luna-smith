@@ -1,13 +1,9 @@
 @use "../../base"
+@use "../../mixins"
 
-@mixin display()
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: space-between
     
 .Footer
-    @include display
+    @include mixins.displayBetween
     height: 50px
     background-color: base.$primary-background
     color: base.$primary-color
@@ -19,8 +15,7 @@
     
     ul
         padding: 5px 10px
-        @include display
-        justify-content: space-around
+        @include mixins.displayAround
         width: 200px
     
         li
