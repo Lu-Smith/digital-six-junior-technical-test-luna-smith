@@ -3,12 +3,15 @@ $primary-color: #fff
 $primary-background: #153A5B
 $primary-line-height: 23px
 $primary-font-size: 15px
+
+@mixin display()
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
     
 .Footer
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: space-between
+    @include display
     height: 50px
     background-color: $primary-background
     color: $primary-color
@@ -20,9 +23,7 @@ $primary-font-size: 15px
     
     ul
         padding: 5px 10px
-        display: flex
-        flex-direction: row
-        align-items: center
+        @include display
         justify-content: space-around
         width: 200px
     

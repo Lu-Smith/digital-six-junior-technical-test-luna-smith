@@ -1,0 +1,30 @@
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  color: #153A5B;
+  background-color: #fff;
+  line-height: 23px;
+  font-size: 15px;
+}
+.NavBar h2 {
+  padding: 5px 10px;
+}
+.NavBar ul {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+}
+.NavBar ul li {
+  list-style: none;
+}
+.NavBar ul li a {
+  text-decoration: none;
+  color: #153A5B;
+  font-weight: 700;
+}/*# sourceMappingURL=navBar.css.map */

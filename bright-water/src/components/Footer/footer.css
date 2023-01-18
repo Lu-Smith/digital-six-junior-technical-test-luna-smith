@@ -1,0 +1,30 @@
+.Footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #153A5B;
+  color: #fff;
+  line-height: 23px;
+  font-size: 15px;
+}
+.Footer h2 {
+  padding: 5px 10px;
+}
+.Footer ul {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  width: 200px;
+}
+.Footer ul li {
+  list-style: none;
+}
+.Footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=footer.css.map */
