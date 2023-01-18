@@ -3,7 +3,7 @@ import classes from "./footer.sass";
 
 export default function Footer({ navItems }) {
   return (
-    <div>
+    <div className="Footer">
       <h2>Footer Component</h2>
       <ul>
         {navItems.map((item, index) => (
