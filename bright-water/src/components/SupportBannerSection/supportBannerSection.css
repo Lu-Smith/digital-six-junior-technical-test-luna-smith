@@ -1,0 +1,11 @@
+.SupportBannerSection {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.SupportBannerSection h2 {
+  font-size: 70px;
+}/*# sourceMappingURL=supportBannerSection.css.map */
