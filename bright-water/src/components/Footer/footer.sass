@@ -1,8 +1,4 @@
-$font-stack: Helvetica, sans-serif
-$primary-color: #fff
-$primary-background: #153A5B
-$primary-line-height: 23px
-$primary-font-size: 15px
+@use "../../base"
 
 @mixin display()
   display: flex
@@ -13,10 +9,10 @@ $primary-font-size: 15px
 .Footer
     @include display
     height: 50px
-    background-color: $primary-background
-    color: $primary-color
-    line-height: $primary-line-height
-    font-size: $primary-font-size
+    background-color: base.$primary-background
+    color: base.$primary-color
+    line-height: base.$primary-line-height
+    font-size: base.$primary-font-size
 
     h2 
         padding: 5px 10px
@@ -32,4 +28,4 @@ $primary-font-size: 15px
 
             a
                 text-decoration: none
-                color: $primary-color
+                color: base.$primary-color
