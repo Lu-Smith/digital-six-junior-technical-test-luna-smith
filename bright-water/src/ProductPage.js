@@ -5,6 +5,8 @@ import classes from "./productPage.sass";
 
 export default function ProductPage() {
   const [product, setProduct] = useState("");
+  const [image, setImage] = useState("");
+  const [price, setPrice] = useState("");
 
   //Pull permalink from url
   const { id } = useParams();
@@ -16,6 +18,8 @@ export default function ProductPage() {
       .retrieve(productPermaLink, { type: "permalink" })
       .then((product) => {
         setProduct(product);
+        setImage(product.image.url);
+        setPrice(product.price.formatted);
       })
       .catch((error) => {
         console.log("There was an error fetching the products", error);
@@ -29,9 +33,21 @@ export default function ProductPage() {
     fetchProduct();
   }, []);
 
+
   return (
-    <>
+    <div className="ProductPage">
       <h1>Product Page - {product.name}</h1>
-    </>
+      <h2>{product.description}</h2>
+      <img src={image} alt={product.name} />
+      <h3>${price}</h3>
+      
+      
+ 
+     
+ 
+
+      <button>Add to basket</button>
+   
+    </div>
   );
 }

@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
       <div>
           <h4>{product.name}</h4>
           <h3>${product.price.formatted}</h3>
-          <ViewProductButton productPermaLink={product.permalink}/>
+          <ViewProductButton productPermaLink={product.permalink} />
       </div>
     </div>
   );
