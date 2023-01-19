@@ -29,23 +29,17 @@ export default function ProductPage() {
   //Here are the product details.
   console.log("Product Details", product);
 
-  useEffect(() => {
+  useEffect(() => { 
     fetchProduct();
-  }, [product]);
+  }, []);
 
 
   return (
     <div className="ProductPage">
       <h1>Product Page - {product.name}</h1>
-      <h2>{product.description}</h2>
       <img src={image} alt={product.name} />
+      <h2>{product.description}</h2>
       <h3>${price}</h3>
-      
-      
- 
-     
- 
-
       <button>Add to basket</button>
    
     </div>
