@@ -40,15 +40,18 @@ export default function ProductPage() {
 
   return (
     <div className="ProductPage">
-      <h1>Product Page - {product.name}</h1>
-      <div >
+      <h1>{product.name}</h1>
+      <div className="productContainer">
           <img src={image} alt={product.name} />
-          <h3>{description}</h3>
-          <h4>${price}</h4>
+          <div>
+              <h2>{product.name}</h2>
+              <h4>${price}</h4>
+              <h3>{description}</h3>
+              <button>
+                 <Link to={`/basket/`}>Add to basket</Link>
+              </button>
+          </div>
       </div>
-      <button>
-          <Link to={`/basket/`}>Add to basket</Link>
-      </button>
     </div>
   );
 }

@@ -3,30 +3,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin: 140px;
 }
 .ProductPage h1 {
   margin-bottom: 40px;
+  color: #153A5B;
 }
-.ProductPage div {
+.ProductPage .productContainer {
   background-color: grey;
-  padding: 20px;
+  padding: 40px;
   border-radius: 20px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.ProductPage .productContainer img {
+  width: 347px;
+  height: 455px;
+}
+.ProductPage .productContainer div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.ProductPage div img {
-  width: 347px;
+  padding: 20px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  width: 600px;
+  background-color: #d4d7db;
+  color: #153A5B;
   height: 455px;
 }
-.ProductPage div h3 {
+.ProductPage .productContainer div h2 {
+  margin-bottom: 10px;
   font-size: 25px;
 }
-.ProductPage div h4 {
-  font-size: 30px;
+.ProductPage .productContainer div h3 {
+  padding: 15px 0;
+  font-style: italic;
+}
+.ProductPage .productContainer div h4 {
+  margin-bottom: 20px;
 }
 .ProductPage button {
   padding: 15px 40px;
@@ -35,7 +55,7 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   border: none;
-  margin-top: 10px;
+  margin-top: 160px;
 }
 .ProductPage button a {
   text-decoration: none;
