@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import About from "./About";
 import ProductPage from "./ProductPage";
+import Basket from "./Basket";
 
 const App = () => {
   //Here is the product list data :)
@@ -44,6 +45,9 @@ const App = () => {
           </Route>
           <Route exact path="/product/:id">
             <ProductPage />
+          </Route>
+          <Route exact path="/basket">
+            <Basket/>
           </Route>
         </Switch>
         <Footer navItems={navItems} />
