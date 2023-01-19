@@ -2,20 +2,38 @@
 @use "../../mixins"
 
 .ProductCard
-    margin-top: 60px
+    margin: 60px 60px 30px 60px
     background-color: base.$secondary-background
     @include mixins.displayCenter(column)
     padding: 20px
+    border-radius: 20px
+    position: relative
 
     img
         width: 347px
         height: 455px
 
-    div 
+    .productDescription
         @include mixins.displayCenter(column)
+        position: absolute
+        bottom: -10%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        opacity: 0
+        transition: opacity 0.5s ease
+        width: 100%
+        color: base.$primary-color
+        padding: 15px 0
 
         h3
             font-size: 25px
             
         h4 
-            font-size: 30px
+            font-size: base.$primary-font-size
+
+
+
+.ProductCard:hover .productDescription
+    opacity: 1
+    background-color: rgba(0, 0, 0, 0.5)
