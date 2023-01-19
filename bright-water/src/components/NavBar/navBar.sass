@@ -3,13 +3,16 @@
     
 .NavBar
     @include mixins.displayBetween
-    position: sticky
+    position: fixed
     top: 0
+    left: 0
+    z-index: 1
     height: 50px
     color: base.$primary-background
     background-color: base.$primary-color
     line-height: base.$primary-line-height
     font-size: base.$primary-font-size
+    width: 100vw
 
     h2 
         padding: 5px 10px
