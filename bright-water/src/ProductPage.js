@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import commerce from "./lib/commerce";
 import { useEffect, useState } from "react";
 import classes from "./productPage.sass";
@@ -46,7 +46,7 @@ export default function ProductPage() {
           <h3>{description}</h3>
           <h4>${price}</h4>
       </div>
-      <button>Add to basket</button>
+      <Link to={`/basket/`}>Add to basket</Link>
    
     </div>
   );
