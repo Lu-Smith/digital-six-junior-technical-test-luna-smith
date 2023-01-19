@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import classes from "./topBannerSection.sass";
 
 
@@ -16,7 +17,9 @@ export default function TopBannerSection() {
   return (
     <div className="TopBannerSection">
         <h1>{messages[index]}</h1>
-        <button>Shop now</button>
+        <button>
+            <Link to={`/basket/`}>Shop now</Link>
+        </button>
     </div>
   );
 }

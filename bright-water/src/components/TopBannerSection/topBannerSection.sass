@@ -7,21 +7,34 @@
     background-size: cover
 
     h1
-        font-size: 70px
-        line-height: 80px
-        padding: 10vw
+        font-size: 110px
+        line-height: 130px
+        padding: 120px 400px
+        color: base.$primary-color
+        text-shadow: 3px 3px 5px rgba(0, 0 , 0, 0.5 )
+        margin-bottom: 400px
 
     button
         padding: 15px 40px
-        font-size: base.$primary-font-size
-        color: base.$primary-background
         background-color: base.$primary-color
-        font-weight: 700
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)
-        position: relative
-        top: 50vh
-        left: 75vw
         border-radius: 30px
         border: none
+        margin: 0 auto
+        display: flex
+        position: relative
+        transition: all 200ms ease-in-out
+        
+        a
+            text-decoration: none
+            font-size: base.$primary-font-size
+            color: base.$primary-background
+            font-weight: 700
+        
+    button:hover
+        box-shadow: none
+        transform: translateY(3px)
+
+
 
     
