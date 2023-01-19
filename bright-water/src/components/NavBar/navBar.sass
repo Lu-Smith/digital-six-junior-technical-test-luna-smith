@@ -17,8 +17,11 @@
 
     h2 
         font-family: base.$secondary-font-family
+
+    .mobileMenu 
+        display: none
     
-    ul
+    .navBarLinks
         @include mixins.displayAround
         width: 200px
     
@@ -34,6 +37,19 @@
             a:hover, a:focus
                 color: base.$secondary-color
                 border-bottom: 2px solid base.$secondary-color
+
+@media only screen and (max-width: 768px)
+    .NavBar
+        background-color: red
+
+        .navBarLinks
+            display: none
+
+        .mobileMenu
+            display: flex
+
+    
+
     
  
     

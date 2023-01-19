@@ -18,22 +18,37 @@
 .NavBar h2 {
   font-family: "Rowdies", cursive;
 }
-.NavBar ul {
+.NavBar .mobileMenu {
+  display: none;
+}
+.NavBar .navBarLinks {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   width: 200px;
 }
-.NavBar ul li {
+.NavBar .navBarLinks li {
   list-style: none;
 }
-.NavBar ul li a {
+.NavBar .navBarLinks li a {
   text-decoration: none;
   color: #153A5B;
   font-weight: 700;
 }
-.NavBar ul li a:hover, .NavBar ul li a:focus {
+.NavBar .navBarLinks li a:hover, .NavBar .navBarLinks li a:focus {
   color: #807b7b;
   border-bottom: 2px solid #807b7b;
+}
+
+@media only screen and (max-width: 768px) {
+  .NavBar {
+    background-color: red;
+  }
+  .NavBar .navBarLinks {
+    display: none;
+  }
+  .NavBar .mobileMenu {
+    display: flex;
+  }
 }/*# sourceMappingURL=navBar.css.map */
