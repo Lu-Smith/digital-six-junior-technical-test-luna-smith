@@ -2,8 +2,7 @@
 @use "../../mixins"
     
 .ProductList
-    @include mixins.displayCenter
-    flex-direction: column
+    @include mixins.displayCenter(column)
     background-color: base.$primary-color
    
     h2

@@ -1,18 +1,18 @@
-@mixin displayCenter
+@mixin displayCenter($direction: row)
   display: flex
-  flex-direction: row
+  flex-direction: $direction
   align-items: center
   justify-content: center
 
-@mixin displayBetween
+@mixin displayBetween($direction: row)
   display: flex
-  flex-direction: row
+  flex-direction: $direction
   align-items: center
   justify-content: space-between
 
-@mixin displayAround
+@mixin displayAround($direction: row)
   display: flex
-  flex-direction: row
+  flex-direction: $direction
   align-items: center
   justify-content: space-around
 

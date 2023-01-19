@@ -4,12 +4,10 @@
 .ProductCard
     margin-top: 40px
     background-color: base.$secondary-background
-    @include mixins.displayCenter
-    flex-direction: column
+    @include mixins.displayCenter(column)
 
     div
-        @include mixins.displayCenter
-        flex-direction: column
+        @include mixins.displayCenter(column)
         padding: 20px
         
         h3
