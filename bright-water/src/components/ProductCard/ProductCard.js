@@ -9,8 +9,8 @@ export default function ProductCard({ product }) {
     <div className="ProductCard">
       <img src={product.image.url} alt={product.name} />
       <div>
-          <h4>{product.name}</h4>
-          <h3>${product.price.formatted}</h3>
+          <h3>{product.name}</h3>
+          <h4>${product.price.formatted}</h4>
           <ViewProductButton productPermaLink={product.permalink} />
       </div>
     </div>

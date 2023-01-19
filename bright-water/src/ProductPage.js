@@ -39,8 +39,8 @@ export default function ProductPage() {
       <h1>Product Page - {product.name}</h1>
       <div>
           <img src={image} alt={product.name} />
-          <h2>{product.description}</h2>
-          <h3>${price}</h3>
+          <h3>{product.description}</h3>
+          <h4>${price}</h4>
       </div>
       <button>Add to basket</button>
    
