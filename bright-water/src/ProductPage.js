@@ -46,8 +46,9 @@ export default function ProductPage() {
           <h3>{description}</h3>
           <h4>${price}</h4>
       </div>
-      <Link to={`/basket/`}>Add to basket</Link>
-   
+      <button>
+          <Link to={`/basket/`}>Add to basket</Link>
+      </button>
     </div>
   );
 }
