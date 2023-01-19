@@ -2,16 +2,20 @@
 @use "../../mixins"
 
 .ProductCard
-    margin-top: 40px
+    margin-top: 60px
     background-color: base.$secondary-background
     @include mixins.displayCenter(column)
+    padding: 20px
 
-    div
+    img
+        width: 347px
+        height: 455px
+
+    div 
         @include mixins.displayCenter(column)
-        padding: 20px
-        
+
         h3
             font-size: 25px
-        
+            
         h4 
             font-size: 30px

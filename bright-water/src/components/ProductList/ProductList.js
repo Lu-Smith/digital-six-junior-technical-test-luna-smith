@@ -8,9 +8,11 @@ export default function ProductList({ products }) {
     <div className="ProductList">
       <h2>Trending now</h2>
       <TrendingProductCard />
-       {products.map((product, index) => {
+      <div className="ProductCardContainer">
+          {products.map((product, index) => {
             return <ProductCard  product={product} key={index}/>
-        })}
+          })}
+      </div>
     </div>
   );
 }
