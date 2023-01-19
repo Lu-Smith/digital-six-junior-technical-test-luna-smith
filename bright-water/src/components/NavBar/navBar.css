@@ -13,13 +13,12 @@
   line-height: 23px;
   font-size: 15px;
   width: 100vw;
+  padding: 10px 30px;
 }
 .NavBar h2 {
-  padding: 5px 10px;
   font-family: "Rowdies", cursive;
 }
 .NavBar ul {
-  padding: 5px 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
