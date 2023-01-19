@@ -5,8 +5,41 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
   background-color: #fff;
 }
 .SupportBannerSection h2 {
-  font-size: 70px;
+  font-size: 55px;
+  letter-spacing: 20px;
+  -webkit-animation: move-text 12s linear infinite;
+          animation: move-text 12s linear infinite;
+}
+@-webkit-keyframes move-text {
+  0% {
+    transform: translateX(100%);
+    opacity: 5%;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 5%;
+  }
+}
+@keyframes move-text {
+  0% {
+    transform: translateX(100%);
+    opacity: 5%;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 5%;
+  }
 }/*# sourceMappingURL=supportBannerSection.css.map */

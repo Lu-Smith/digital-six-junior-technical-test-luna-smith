@@ -1,9 +1,8 @@
 .ProductList {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   background-color: #fff;
 }
 .ProductList h2 {
@@ -20,4 +19,11 @@
   margin: 0 auto;
   width: 130px;
   border-bottom: 3px solid #153A5B;
+}
+.ProductList .ProductCardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=productList.css.map */

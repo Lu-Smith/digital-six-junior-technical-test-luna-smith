@@ -1,18 +1,21 @@
 .Footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
   background-color: #153A5B;
   color: #fff;
   line-height: 23px;
   font-size: 15px;
+  padding: 30px 0;
 }
-.Footer h2 {
+.Footer .mainFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.Footer .mainFooter h2 {
   padding: 5px 10px;
+  font-family: "Rowdies", cursive;
 }
-.Footer ul {
+.Footer .mainFooter ul {
   padding: 5px 10px;
   display: flex;
   flex-direction: row;
@@ -20,10 +23,30 @@
   justify-content: space-around;
   width: 200px;
 }
-.Footer ul li {
+.Footer .mainFooter ul li {
   list-style: none;
 }
-.Footer ul li a {
+.Footer .mainFooter ul li a {
   text-decoration: none;
   color: #fff;
+}
+.Footer .fillerFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px;
+}
+.Footer .fillerFooter ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Footer .fillerFooter ul li {
+  list-style: none;
+}
+.Footer .fillerFooter ul .title {
+  font-weight: 700;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=footer.css.map */

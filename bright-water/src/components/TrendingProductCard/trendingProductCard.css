@@ -1,0 +1,39 @@
+.TrendingProductCard {
+  margin-top: 40px;
+  background-color: #d4d7db;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.TrendingProductCard div {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.TrendingProductCard div img {
+  width: 240px;
+  height: 320px;
+  border-radius: 20px;
+  border: 4px solid #807b7b;
+}
+.TrendingProductCard div h3 {
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 15px 40px;
+}
+.TrendingProductCard div:hover h3 {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=trendingProductCard.css.map */

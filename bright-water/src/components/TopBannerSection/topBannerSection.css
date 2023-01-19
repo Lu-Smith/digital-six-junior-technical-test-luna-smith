@@ -5,20 +5,31 @@
   background-size: cover;
 }
 .TopBannerSection h1 {
-  font-size: 70px;
-  line-height: 80px;
-  padding: 10vw;
+  font-size: 110px;
+  line-height: 130px;
+  padding: 120px 400px;
+  color: #fff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 400px;
 }
 .TopBannerSection button {
   padding: 15px 40px;
-  font-size: 15px;
-  color: #153A5B;
   background-color: #fff;
-  font-weight: 700;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-  position: relative;
-  top: 50vh;
-  left: 75vw;
   border-radius: 30px;
   border: none;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  transition: all 200ms ease-in-out;
+}
+.TopBannerSection button a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #153A5B;
+  font-weight: 700;
+}
+.TopBannerSection button:hover {
+  box-shadow: none;
+  transform: translateY(3px);
 }/*# sourceMappingURL=topBannerSection.css.map */

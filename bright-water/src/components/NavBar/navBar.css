@@ -3,14 +3,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
   height: 50px;
   color: #153A5B;
   background-color: #fff;
   line-height: 23px;
   font-size: 15px;
+  width: 100vw;
 }
 .NavBar h2 {
   padding: 5px 10px;
+  font-family: "Rowdies", cursive;
 }
 .NavBar ul {
   padding: 5px 10px;
@@ -27,4 +33,8 @@
   text-decoration: none;
   color: #153A5B;
   font-weight: 700;
+}
+.NavBar ul li a:hover, .NavBar ul li a:focus {
+  color: #807b7b;
+  border-bottom: 2px solid #807b7b;
 }/*# sourceMappingURL=navBar.css.map */
