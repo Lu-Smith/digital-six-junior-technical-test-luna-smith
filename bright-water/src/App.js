@@ -30,6 +30,7 @@ const App = () => {
   const navItems = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
+    { name: "Basket", link: "/basket" },
   ];
 
   return (
