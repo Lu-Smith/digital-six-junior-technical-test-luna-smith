@@ -7,6 +7,8 @@ export default function ProductPage() {
   const [product, setProduct] = useState("");
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
+  const [description, setDescription] = useState("");
+
 
   //Pull permalink from url
   const { id } = useParams();
@@ -20,6 +22,8 @@ export default function ProductPage() {
         setProduct(product);
         setImage(product.image.url);
         setPrice(product.price.formatted);
+        setDescription(product.description.replace(/<[^>]+>/g, ""));
+   
       })
       .catch((error) => {
         console.log("There was an error fetching the products", error);
@@ -37,9 +41,9 @@ export default function ProductPage() {
   return (
     <div className="ProductPage">
       <h1>Product Page - {product.name}</h1>
-      <div>
+      <div >
           <img src={image} alt={product.name} />
-          <h3>{product.description}</h3>
+          <h3>{description}</h3>
           <h4>${price}</h4>
       </div>
       <button>Add to basket</button>
