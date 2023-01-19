@@ -11,7 +11,7 @@ export default function NavBar({ navItems }) {
           if (item.name === "Basket") {
             return <li key={index}>
                       <Link to={item.link}>
-                          <span class="material-symbols-outlined">
+                          <span className="material-symbols-outlined">
                               shopping_basket
                           </span>
                       </Link>
