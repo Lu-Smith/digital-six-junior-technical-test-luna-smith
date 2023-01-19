@@ -29,6 +29,10 @@
   text-decoration: none;
   color: #fff;
 }
+.Footer .mainFooter ul li a:hover, .Footer .mainFooter ul li a:focus {
+  color: #807b7b;
+  border-bottom: 2px solid #807b7b;
+}
 .Footer .fillerFooter {
   display: flex;
   flex-direction: row;

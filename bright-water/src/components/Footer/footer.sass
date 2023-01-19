@@ -27,6 +27,10 @@
                 a
                     text-decoration: none
                     color: base.$primary-color
+                
+                a:hover, a:focus
+                    color: base.$secondary-color
+                    border-bottom: 2px solid base.$secondary-color
 
     .fillerFooter
         @include mixins.displayAround
