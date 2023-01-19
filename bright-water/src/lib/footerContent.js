@@ -16,5 +16,11 @@ export const footerContent = [
         filler1: "Press",
         filler2: "Our Story",
         filler3: "Affiliate program"
+    },
+    {
+        title: "Social Links",
+        filler1: "Facebook",
+        filler2: "Twitter",
+        filler3: "Pinetrest"
     }
 ]
