@@ -1,1 +1,33 @@
-/*# sourceMappingURL=about.css.map */
+.About {
+  margin: 140px auto;
+  color: #153A5B;
+  width: 600px;
+  height: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.About h1 {
+  margin: 80px 0;
+  font-size: 20px;
+}
+.About p {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 450px;
+}
+
+.About::before {
+  content: "";
+  background-color: #d4d7db;
+  border-radius: 100% 100% 5% 5%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}/*# sourceMappingURL=about.css.map */
