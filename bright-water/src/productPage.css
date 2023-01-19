@@ -56,9 +56,15 @@
   border-radius: 30px;
   border: none;
   margin-top: 160px;
+  position: relative;
+  transition: all 200ms ease-in-out;
 }
 .ProductPage button a {
   text-decoration: none;
   font-size: 15px;
   color: #153A5B;
+}
+.ProductPage button:hover {
+  box-shadow: none;
+  transform: translateY(3px);
 }/*# sourceMappingURL=productPage.css.map */
