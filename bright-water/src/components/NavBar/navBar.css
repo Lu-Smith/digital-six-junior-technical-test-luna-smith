@@ -43,12 +43,21 @@
 
 @media only screen and (max-width: 768px) {
   .NavBar {
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
   .NavBar .navBarLinks {
     display: none;
   }
   .NavBar .mobileMenu {
     display: flex;
+    border: none;
+    background: none;
+  }
+  .NavBar .mobileMenu span {
+    color: #153A5B;
+    font-size: 30px;
   }
 }/*# sourceMappingURL=navBar.css.map */

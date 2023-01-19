@@ -40,13 +40,19 @@
 
 @media only screen and (max-width: 768px)
     .NavBar
-        background-color: red
+        @include mixins.displayAround
 
         .navBarLinks
             display: none
 
         .mobileMenu
             display: flex
+            border: none
+            background: none
+            
+            span
+                color: base.$primary-background
+                font-size: 30px
 
     
 

@@ -13,7 +13,11 @@ export default function NavBar({ navItems }) {
   return (
     <div className="NavBar">
       <h2>Bright Water</h2>
-      <button className="mobileMenu" onClick={toggleNavBarLinks}>Toggle Navbar</button>
+      <button className="mobileMenu" onClick={toggleNavBarLinks}>
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+      </button>
       <ul className={`navBarLinks ${showNavBarLinks ? "" : "hidden"}`}>
         {navItems.map((item, index) => {
           if (item.name === "Basket") {
