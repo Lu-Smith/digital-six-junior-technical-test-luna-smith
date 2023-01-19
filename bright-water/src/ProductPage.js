@@ -31,7 +31,7 @@ export default function ProductPage() {
 
   useEffect(() => {
     fetchProduct();
-  }, []);
+  }, [product]);
 
 
   return (
