@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import classes from "./navBar.sass";
 
 export default function NavBar({ navItems }) {
+  
   return (
     <div className="NavBar">
       <h2>Bright Water</h2>
