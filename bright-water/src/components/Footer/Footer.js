@@ -5,7 +5,7 @@ import classes from "./footer.sass";
 export default function Footer({ navItems }) {
   return (
     <div className="Footer">
-      <div>
+      <div className="mainFooter">
           <h2>Bright Water</h2>
           <ul>
             {navItems.map((item, index) => {
@@ -26,7 +26,7 @@ export default function Footer({ navItems }) {
             )}
           </ul>
       </div>
-      <div>
+      <div className="fillerFooter">
         {footerContent.map((content, index) => {
           return (
             <ul key={index}>
