@@ -2,8 +2,9 @@ import classes from "./basket.sass";
 
 export default function Basket() {
   return (
-    <>
-      <h1>Basket Page</h1>
-    </>
+    <div className="Basket">
+      <h1>Basket</h1>
+      <p>Empty</p>
+    </div>
   );
 }
