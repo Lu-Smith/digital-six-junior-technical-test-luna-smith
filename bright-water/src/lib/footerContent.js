@@ -1,7 +1,7 @@
 export const footerContent = [
     {
         title: "Help",
-        filler1: "Frequently Asked Questions",
+        filler1: "FAQ",
         filler2: "Reviews",
         filler3: "Contact Us"
     },
