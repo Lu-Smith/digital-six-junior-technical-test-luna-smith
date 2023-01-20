@@ -14,7 +14,7 @@ export default function NavBar({ navItems }) {
     <div className="NavBar">
       <h2>Bright Water</h2>
       <button className="mobileMenu" onClick={toggleNavBarLinks}>
-        <span class="material-symbols-outlined">
+        <span className="material-symbols-outlined">
             menu
         </span>
         {showNavBarLinks &&  

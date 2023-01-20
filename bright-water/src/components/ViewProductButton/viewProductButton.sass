@@ -10,16 +10,150 @@
         margin-top: 10px
         position: relative
         transition: all 200ms ease-in-out
+        z-index: 90
        
         a
             text-decoration: none
             font-size: base.$primary-font-size
             color: base.$primary-background
-
+        
 .ViewProductButton:hover
     box-shadow: none
     transform: translateY(3px)
-        
+
+.ViewProductButton:hover .bubble1 
+    width: 40px
+    height: 40px
+    background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, base.$primary-background 72.3%, rgb(30, 209, 203) 90.8%)
+    border-radius: 50%
+    position: absolute
+    top: -50%
+    left: -30%
+    transform: translate(-50%, -50%)
+    opacity: 0.2
+    z-index: -1
+    animation: move-bubble1 12s linear infinite
+
+    @keyframes move-bubble1
+        0%  
+            transform: translateX(50%)
+            opacity: 5%
+        50%  
+            transform: translateX(0%)
+            opacity: 100%
+        100% 
+            transform: translateX(-100%)
+            opacity: 5%
+
+.ViewProductButton:hover .bubble2
+    width: 25px
+    height: 25px
+    background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, base.$primary-background 72.3%, rgb(30, 209, 203) 90.8%)
+    border-radius: 50%
+    position: absolute
+    top: -10%
+    left: -15%
+    transform: translate(-50%, -50%)
+    opacity: 0.2
+    z-index: -1
+    animation: move-bubble2 10s linear infinite
+
+    @keyframes move-bubble2
+        0%  
+            transform: translateY(100%)
+            opacity: 5%
+        50%  
+            transform: translateY(0%)
+            opacity: 100%
+        100% 
+            transform: translateY(-100%)
+            opacity: 5%
+
+.ViewProductButton:hover .bubble3
+    width: 30px
+    height: 30px
+    background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, base.$primary-background 72.3%, rgb(30, 209, 203) 90.8%)
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    left: -30%
+    transform: translate(-50%, -50%)
+    opacity: 0.3
+    z-index: -1
+    animation: move-bubble3 8s ease infinite
+
+.ViewProductButton:hover .bubble4 
+    width: 40px
+    height: 40px
+    background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, base.$primary-background 72.3%, rgb(30, 209, 203) 90.8%)
+    border-radius: 50%
+    position: absolute
+    top: -50%
+    right: -50%
+    transform: translate(-50%, -50%)
+    opacity: 0.2
+    z-index: -1
+    animation: move-bubble1 12s linear infinite
+
+    @keyframes move-bubble1
+        0%  
+            transform: translateX(-100%)
+            opacity: 5%
+        50%  
+            transform: translateX(0%)
+            opacity: 100%
+        100% 
+            transform: translateX(50%)
+            opacity: 5%
+
+.ViewProductButton:hover .bubble5
+    width: 25px
+    height: 25px
+    background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, base.$primary-background 72.3%, rgb(30, 209, 203) 90.8%)
+    border-radius: 50%
+    position: absolute
+    top: -10%
+    right: -15%
+    transform: translate(-50%, -50%)
+    opacity: 0.2
+    z-index: -1
+    animation: move-bubble2 10s linear infinite
+
+    @keyframes move-bubble2
+        0%  
+            transform: translateY(-100%)
+            opacity: 5%
+        50%  
+            transform: translateY(0%)
+            opacity: 100%
+        100% 
+            transform: translateY(100%)
+            opacity: 5%
+
+.ViewProductButton:hover .bubble6
+    width: 30px
+    height: 30px
+    background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, base.$primary-background 72.3%, rgb(30, 209, 203) 90.8%)
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    right: -30%
+    transform: translate(-50%, -50%)
+    opacity: 0.3
+    z-index: -1
+    animation: move-bubble3 8s ease infinite
+
+    @keyframes move-bubble3
+        0%  
+            transform: translateX(50%)
+            opacity: 5%
+        50%  
+            transform: translateX(0%)
+            opacity: 100%
+        100% 
+            transform: translateX(-100%)
+            opacity: 5%
+ 
 
 
 @media only screen and (max-width: 786px)

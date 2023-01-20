@@ -7,6 +7,12 @@ export default function ViewProductButton({ productPermaLink}) {
   return (
     <div className="ViewProductButton">
       <Link to={`/product/${permaLink}`}>View Product</Link>
+      <div className="bubble1"></div>
+      <div className="bubble2"></div>
+      <div className="bubble3"></div>
+      <div className="bubble4"></div>
+      <div className="bubble5"></div>
+      <div className="bubble6"></div>
     </div>
   );
 }

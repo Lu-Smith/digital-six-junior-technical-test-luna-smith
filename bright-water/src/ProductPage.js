@@ -9,7 +9,6 @@ export default function ProductPage() {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
 
-
   //Pull permalink from url
   const { id } = useParams();
   const productPermaLink = id.toString();
@@ -37,7 +36,6 @@ export default function ProductPage() {
     fetchProduct();
   }, []);
 
-
   return (
     <div className="ProductPage">
       <h1>{product.name}</h1>
@@ -48,7 +46,7 @@ export default function ProductPage() {
               <h4>${price}</h4>
               <h3>{description}</h3>
               <button>
-                 <Link to={`/basket/`}>Add to basket</Link>
+                 <Link to={`/basket/`} >Add to basket</Link>
               </button>
           </div>
       </div>
