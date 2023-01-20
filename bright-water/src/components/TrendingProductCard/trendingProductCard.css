@@ -64,4 +64,7 @@
     border-radius: 10px;
     border: 2px solid #807b7b;
   }
+  .TrendingProductCard div h3 {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=trendingProductCard.css.map */
