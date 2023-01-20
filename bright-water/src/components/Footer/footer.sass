@@ -9,7 +9,6 @@
     font-size: base.$primary-font-size
     padding: 10px 0
 
-
     .mainFooter
         @include mixins.displayBetween
         padding: 10px 30px
@@ -17,7 +16,7 @@
         h2 
             font-family: base.$secondary-font-family
         
-        ul
+        .navBarLinks
             @include mixins.displayAround
             width: 200px
         
@@ -45,3 +44,25 @@
             .title
                 font-weight: 700
                 margin-bottom: 10px
+
+@media only screen and (max-width: 768px)
+    .Footer
+
+        .mainFooter
+            @include mixins.displayAround
+    
+            .navBarLinks
+                display: none
+
+        .fillerFooter
+            padding: 40px
+
+            li
+                font-size: 13px
+
+            .title
+                font-weight: 700
+                margin-bottom: 8px
+        
+
+            

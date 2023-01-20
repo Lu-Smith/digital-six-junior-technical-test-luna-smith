@@ -3,11 +3,12 @@ import { footerContent } from "../../lib/footerContent";
 import classes from "./footer.sass";
 
 export default function Footer({ navItems }) {
+
   return (
     <div className="Footer">
       <div className="mainFooter">
           <h2>Bright Water</h2>
-          <ul>
+          <ul className="navBarLinks">
             {navItems.map((item, index) => {
                   if (item.name === "Basket") {
                       return <li key={index}>
@@ -40,8 +41,6 @@ export default function Footer({ navItems }) {
           )
         })}
       </div>
-        
-       
     </div>
   );
 }
