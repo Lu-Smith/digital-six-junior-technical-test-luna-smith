@@ -19,6 +19,12 @@ export default function TopBannerSection() {
         <h1>{messages[index]}</h1>
         <button>
             <Link to={`/basket/`}>Shop now</Link>
+            <p className="bubble1"></p>
+            <p className="bubble2"></p>
+            <p className="bubble3"></p>
+            <p className="bubble4"></p>
+            <p className="bubble5"></p>
+            <p className="bubble6"></p>
         </button>
     </div>
   );

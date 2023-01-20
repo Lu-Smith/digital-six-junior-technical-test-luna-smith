@@ -47,7 +47,14 @@ export default function ProductPage() {
               <h3>{description}</h3>
               <button>
                  <Link to={`/basket/`} >Add to basket</Link>
+                 <p className="bubble1"></p>
+                 <p className="bubble2"></p>
+                 <p className="bubble3"></p>
+                 <p className="bubble4"></p>
+                 <p className="bubble5"></p>
+                 <p className="bubble6"></p>
               </button>
+              
           </div>
       </div>
     </div>

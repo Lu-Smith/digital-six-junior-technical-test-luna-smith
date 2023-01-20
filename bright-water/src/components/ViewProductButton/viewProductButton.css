@@ -133,10 +133,24 @@
   transform: translate(-50%, -50%);
   opacity: 0.2;
   z-index: -1;
-  -webkit-animation: move-bubble1 12s linear infinite;
-          animation: move-bubble1 12s linear infinite;
+  -webkit-animation: move-bubble4 12s linear infinite;
+          animation: move-bubble4 12s linear infinite;
 }
-@keyframes move-bubble1 {
+@-webkit-keyframes move-bubble4 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 5%;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateX(50%);
+    opacity: 5%;
+  }
+}
+@keyframes move-bubble4 {
   0% {
     transform: translateX(-100%);
     opacity: 5%;
@@ -162,10 +176,24 @@
   transform: translate(-50%, -50%);
   opacity: 0.2;
   z-index: -1;
-  -webkit-animation: move-bubble2 10s linear infinite;
-          animation: move-bubble2 10s linear infinite;
+  -webkit-animation: move-bubble5 10s linear infinite;
+          animation: move-bubble5 10s linear infinite;
 }
-@keyframes move-bubble2 {
+@-webkit-keyframes move-bubble5 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 5%;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 5%;
+  }
+}
+@keyframes move-bubble5 {
   0% {
     transform: translateY(-100%);
     opacity: 5%;
@@ -191,12 +219,12 @@
   transform: translate(-50%, -50%);
   opacity: 0.3;
   z-index: -1;
-  -webkit-animation: move-bubble3 8s ease infinite;
-          animation: move-bubble3 8s ease infinite;
+  -webkit-animation: move-bubble6 8s ease infinite;
+          animation: move-bubble6 8s ease infinite;
 }
-@-webkit-keyframes move-bubble3 {
+@-webkit-keyframes move-bubble6 {
   0% {
-    transform: translateX(50%);
+    transform: translateX(-100%);
     opacity: 5%;
   }
   50% {
@@ -204,13 +232,13 @@
     opacity: 100%;
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(50%);
     opacity: 5%;
   }
 }
-@keyframes move-bubble3 {
+@keyframes move-bubble6 {
   0% {
-    transform: translateX(50%);
+    transform: translateX(-100%);
     opacity: 5%;
   }
   50% {
@@ -218,7 +246,7 @@
     opacity: 100%;
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(50%);
     opacity: 5%;
   }
 }

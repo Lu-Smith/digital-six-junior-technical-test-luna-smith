@@ -68,6 +68,90 @@
   box-shadow: none;
   transform: translateY(3px);
 }
+.ProductPage .productContainer div button:hover .bubble1 {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, #153A5B 72.3%, rgb(30, 209, 203) 90.8%);
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  z-index: -1;
+  -webkit-animation: move-bubble1 12s linear infinite;
+          animation: move-bubble1 12s linear infinite;
+}
+.ProductPage .productContainer div button:hover .bubble2 {
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, #153A5B 72.3%, rgb(30, 209, 203) 90.8%);
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  left: -15%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  z-index: -1;
+  -webkit-animation: move-bubble2 10s linear infinite;
+          animation: move-bubble2 10s linear infinite;
+}
+.ProductPage .productContainer div button:hover .bubble3 {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, #153A5B 72.3%, rgb(30, 209, 203) 90.8%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  z-index: -1;
+  -webkit-animation: move-bubble3 8s ease infinite;
+          animation: move-bubble3 8s ease infinite;
+}
+.ProductPage .productContainer div button:hover .bubble4 {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, #153A5B 72.3%, rgb(30, 209, 203) 90.8%);
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  z-index: -1;
+  -webkit-animation: move-bubble4 12s linear infinite;
+          animation: move-bubble4 12s linear infinite;
+}
+.ProductPage .productContainer div button:hover .bubble5 {
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, #153A5B 72.3%, rgb(30, 209, 203) 90.8%);
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  right: -15%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  z-index: -1;
+  -webkit-animation: move-bubble5 10s linear infinite;
+          animation: move-bubble5 10s linear infinite;
+}
+.ProductPage .productContainer div button:hover .bubble6 {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at 7.5% 24%, rgb(144, 236, 248) 0%, rgb(87, 245, 192) 35.5%, #153A5B 72.3%, rgb(30, 209, 203) 90.8%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -30%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  z-index: -1;
+  -webkit-animation: move-bubble6 8s ease infinite;
+          animation: move-bubble6 8s ease infinite;
+}
 
 @media only screen and (max-width: 1000px) {
   .ProductPage {
