@@ -18,7 +18,7 @@
 .NavBar h2 {
   font-family: "Rowdies", cursive;
 }
-.NavBar .mobileMenu {
+.NavBar .mobileMenu, .NavBar .mobileNavBarLinks {
   display: none;
 }
 .NavBar .navBarLinks {
@@ -47,6 +47,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    z-index: 99;
   }
   .NavBar .navBarLinks {
     display: none;
@@ -55,9 +56,52 @@
     display: flex;
     border: none;
     background: none;
+    position: relative;
+  }
+  .NavBar .mobileMenu .mobileNavBarLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #807b7b;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 15px 40px;
+    border-radius: 20px;
+  }
+  .NavBar .mobileMenu .mobileNavBarLinks li {
+    list-style: none;
+    padding: 10px 0;
+  }
+  .NavBar .mobileMenu .mobileNavBarLinks li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .NavBar .mobileMenu .mobileNavBarLinks li a:hover, .NavBar .mobileMenu .mobileNavBarLinks li a:focus {
+    color: #153A5B;
+  }
+  .NavBar .mobileMenu .mobileNavBarLinks li span {
+    color: #fff;
+  }
+  .NavBar .mobileMenu .mobileNavBarLinks li span:hover, .NavBar .mobileMenu .mobileNavBarLinks li span:focus {
+    color: #153A5B;
   }
   .NavBar .mobileMenu span {
     color: #153A5B;
     font-size: 30px;
+  }
+  .NavBar .mobileMenu:hover .mobileNavBarLinks, .NavBar .mobileMenu:focus .mobileNavBarLinks {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .NavBar h2 {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=navBar.css.map */

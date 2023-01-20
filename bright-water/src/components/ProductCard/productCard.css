@@ -39,4 +39,26 @@
 .ProductCard:hover .productDescription {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 786px) {
+  .ProductCard {
+    margin: 50px 20px 0 20px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .ProductCard img {
+    width: 216.875px;
+    height: 284.375px;
+  }
+  .ProductCard .productDescription {
+    bottom: -15%;
+    padding: 13px 0;
+  }
+  .ProductCard .productDescription h3 {
+    font-size: 20px;
+  }
+  .ProductCard .productDescription h4 {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=productCard.css.map */

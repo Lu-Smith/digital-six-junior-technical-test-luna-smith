@@ -32,4 +32,48 @@
 .TopBannerSection button:hover {
   box-shadow: none;
   transform: translateY(3px);
+}
+
+@media only screen and (max-width: 1000px) {
+  .TopBannerSection {
+    height: 85vh;
+  }
+  .TopBannerSection h1 {
+    font-size: 90px;
+    line-height: 120px;
+    padding: 80px 150px;
+    margin-bottom: 400px;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .TopBannerSection {
+    height: 85vh;
+    background-image: url("../../lib/BrightWaterBannerMobile.jpg");
+    background-position: center;
+  }
+  .TopBannerSection h1 {
+    font-size: 70px;
+    line-height: 100px;
+    padding: 80px 30px;
+    margin-bottom: 400px;
+  }
+  .TopBannerSection button {
+    padding: 13px 35px;
+    border-radius: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .TopBannerSection h1 {
+    font-size: 50px;
+    line-height: 100px;
+    padding: 80px 30px;
+    margin-bottom: 400px;
+  }
+  .TopBannerSection button {
+    padding: 10px 30px;
+    border-radius: 15px;
+  }
+  .TopBannerSection button a {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=topBannerSection.css.map */
