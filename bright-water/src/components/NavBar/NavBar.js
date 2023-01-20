@@ -17,8 +17,28 @@ export default function NavBar({ navItems }) {
         <span class="material-symbols-outlined">
             menu
         </span>
+        {showNavBarLinks &&  
+            <ul className="mobileNavBarLinks">
+                {navItems.map((item, index) => {
+                    if (item.name === "Basket") {
+                      return <li key={index}>
+                                <Link to={item.link}>
+                                    <span className="material-symbols-outlined">
+                                        shopping_basket
+                                    </span>
+                                </Link>
+                            </li>
+                    } else {
+                      return <li key={index}>
+                                <Link to={item.link}>{item.name}</Link>
+                            </li>
+                    }
+                  }
+                )}
+            </ul>
+        }
       </button>
-      <ul className={`navBarLinks ${showNavBarLinks ? "" : "hidden"}`}>
+      <ul className="navBarLinks">
         {navItems.map((item, index) => {
           if (item.name === "Basket") {
             return <li key={index}>

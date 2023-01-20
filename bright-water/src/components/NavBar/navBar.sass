@@ -18,7 +18,7 @@
     h2 
         font-family: base.$secondary-font-family
 
-    .mobileMenu 
+    .mobileMenu, .mobileNavBarLinks 
         display: none
     
     .navBarLinks
@@ -41,6 +41,8 @@
 @media only screen and (max-width: 768px)
     .NavBar
         @include mixins.displayAround
+        z-index: 99
+       
 
         .navBarLinks
             display: none
@@ -49,10 +51,45 @@
             display: flex
             border: none
             background: none
+            position: relative
+        
+            .mobileNavBarLinks
+                @include mixins.displayBetween(column)
+                background-color: base.$secondary-color
+                position: absolute
+                top: 110px
+                left: 50%
+                transform: translate(-50%, -50%)
+                text-align: center
+                opacity: 0
+                transition: opacity 0.5s ease
+                padding: 15px 40px
+                border-radius: 20px
+
+                li
+                    list-style: none
+                    padding: 10px 0
+
+                    a
+                        text-decoration: none
+                        color: base.$primary-color
+                    
+                    a:hover, a:focus
+                        color: base.$primary-background
+
+                    span
+                        color: base.$primary-color
+
+                    span:hover, span:focus
+                        color: base.$primary-background  
             
             span
                 color: base.$primary-background
                 font-size: 30px
+            
+        .mobileMenu:hover .mobileNavBarLinks, .mobileMenu:focus .mobileNavBarLinks
+            opacity: 1
+            background-color: rgba(0, 0, 0, 0.5)
 
     
 
