@@ -50,4 +50,18 @@
     height: 240px;
     border-radius: 15px;
   }
+}
+@media only screen and (max-width: 480px) {
+  .TrendingProductCard {
+    margin-top: 30px;
+  }
+  .TrendingProductCard div {
+    margin: 0 5px;
+  }
+  .TrendingProductCard div img {
+    width: 120px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid #807b7b;
+  }
 }/*# sourceMappingURL=trendingProductCard.css.map */
