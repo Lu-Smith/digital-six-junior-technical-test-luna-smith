@@ -4,8 +4,10 @@
 .TrendingProductCard
     margin-top: 40px
     background-color: base.$secondary-background
-    @include mixins.displayCenter
+    @include mixins.displayAround
     width: 100vw
+    overflow-x: scroll
+    overflow-y: hidden
 
     div 
         margin: 0 20px

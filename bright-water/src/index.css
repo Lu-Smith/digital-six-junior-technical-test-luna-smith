@@ -6,4 +6,7 @@
 
 body {
   font-family: 'Sofia Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
 }

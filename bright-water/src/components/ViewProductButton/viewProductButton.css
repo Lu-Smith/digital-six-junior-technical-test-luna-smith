@@ -121,6 +121,34 @@
   -webkit-animation: move-bubble3 8s ease infinite;
           animation: move-bubble3 8s ease infinite;
 }
+@-webkit-keyframes move-bubble3 {
+  0% {
+    transform: translateY(100%);
+    opacity: 5%;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 5%;
+  }
+}
+@keyframes move-bubble3 {
+  0% {
+    transform: translateY(100%);
+    opacity: 5%;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 5%;
+  }
+}
 
 .ViewProductButton:hover .bubble4 {
   width: 40px;

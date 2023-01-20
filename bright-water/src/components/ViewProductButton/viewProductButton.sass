@@ -82,6 +82,18 @@
     z-index: -1
     animation: move-bubble3 8s ease infinite
 
+    @keyframes move-bubble3
+        0%  
+            transform: translateY(100%)
+            opacity: 5%
+        50%  
+            transform: translateY(0%)
+            opacity: 100%
+        100% 
+            transform: translateY(-100%)
+            opacity: 5%
+
+
 .ViewProductButton:hover .bubble4 
     width: 40px
     height: 40px
