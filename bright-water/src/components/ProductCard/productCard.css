@@ -30,7 +30,8 @@
   padding: 15px 0;
 }
 .ProductCard .productDescription h3 {
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 4px;
 }
 .ProductCard .productDescription h4 {
   font-size: 15px;
