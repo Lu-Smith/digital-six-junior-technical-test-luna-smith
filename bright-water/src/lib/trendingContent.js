@@ -47,4 +47,24 @@ export const content = [
         src: Bottle2,
         alt: "Bottle2"
     },
+    {
+        id: 9,
+        src: Bottle3,
+        alt: "Bottle3"
+    },
+    {
+        id: 10,
+        src: Bottle4,
+        alt: "Bottle4"
+    },
+    {
+        id: 11,
+        src: Bottle5,
+        alt: "Bottle1"
+    },
+    {
+        id: 12,
+        src: Bottle6,
+        alt: "Bottle2"
+    },
 ]
