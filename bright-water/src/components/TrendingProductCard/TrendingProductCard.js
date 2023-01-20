@@ -23,7 +23,7 @@ export default function TrendingProductCard() {
       </button>
       {content.map((trendImage, index) => {
         return (
-          <div key={index} style={{ display: (activeSlide === index) ? 'block' : 'none' }}>
+          <div key={index} style={{ display: (activeSlide === index) ? 'block' : 'none' && (activeSlide === index - 3) ? 'block' : 'none' && (activeSlide === index - 2) ? 'block' : 'none' && (activeSlide === index - 1) ? 'block' : 'none'}}>
               <img src={trendImage.src} alt={trendImage.alt} />
               <h3>{trendImage.alt}</h3>
           </div>)
