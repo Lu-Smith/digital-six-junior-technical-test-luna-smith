@@ -64,8 +64,46 @@
         box-shadow: none
         transform: translateY(3px)
 
+@media only screen and (max-width: 786px)
+    .ProductPage
+        @include mixins.displayCenter(column)
+        margin: 140px
 
-    
+        h1 
+            margin-bottom: 30px
+            font-size: 28px
+
+        .productContainer
+            background-color: base.$primary-background
+            padding: 30px
+            border-radius: 15px
+            @include mixins.displayCenter(column)
+
+            img 
+                width: 216.875px
+                height: 284.375px
+                border-radius: 15px
+                margin-bottom: 30px
+
+            div 
+                padding: 15px
+                width: 400px
+                height: 400px
+                
+                h2
+                    font-size: 20px
+
+                h3
+                    padding: 13px 0
+                    
+                h4 
+                    margin-bottom: 15px
+            
+                
+        button
+            padding: 13px 35px
+            border-radius: 25px
+  
 
 
             
