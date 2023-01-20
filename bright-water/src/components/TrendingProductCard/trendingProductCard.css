@@ -5,7 +5,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 100vw;
+  justify-content: start;
+  width: 98vw;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -54,9 +55,6 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  .TrendingProductCard {
-    margin-top: 30px;
-  }
   .TrendingProductCard div {
     margin: 0 5px;
   }

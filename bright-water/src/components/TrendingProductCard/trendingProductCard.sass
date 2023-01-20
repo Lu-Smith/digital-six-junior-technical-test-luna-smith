@@ -5,7 +5,8 @@
     margin-top: 40px
     background-color: base.$secondary-background
     @include mixins.displayAround
-    width: 100vw
+    justify-content: start
+    width: 98vw
     overflow-x: scroll
     overflow-y: hidden
 
@@ -13,8 +14,6 @@
         margin: 0 20px
         @include mixins.displayCenter(column)
         position: relative
-       
-
 
         img 
             width: 240px
@@ -52,7 +51,6 @@
 
 @media only screen and (max-width: 480px)
     .TrendingProductCard
-        margin-top: 30px
     
         div 
             margin: 0 5px
